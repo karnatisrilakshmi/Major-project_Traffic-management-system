@@ -1,15 +1,7 @@
-{% extends 'RUser/design.html' %}
-{% block userblock %}
-
-
 <link rel="icon" href="images/icon.png" type="image/x-icon" />
-
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-
-
-
 		<style>
 			body {background-color:#000000;}
 			.container-fluid {padding:50px;}
@@ -115,8 +107,6 @@
                                 </table>
 					 </fieldset>
 				  </form>
-
-
  					<form role="form" method="POST" >
 						{% csrf_token %}
 						<fieldset>
@@ -126,28 +116,17 @@
                               <table width="719" height="72" border="0" align="center" >
                                     <tr><td width="376" bgcolor="#FF0000"><div align="center"><span class="style6">Prediction of Traffic Type</span> <span class="style4">::</span> </div></td>
 
-
-
                                       <td width="333" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center"><strong>{{objs}}</strong></div></td>
                                     </tr>
                       </table>
-
-
-
                             </div>
-
-
-
-
 						</fieldset>
 					</form>
 				</div>
 
 				<div class="col-md-2">
-					<!-------null------>
 				</div>
             </div>
         </div>
     </div>
-{% endblock %}
     <tr>
