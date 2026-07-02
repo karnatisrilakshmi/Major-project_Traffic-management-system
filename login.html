@@ -1,24 +1,14 @@
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-{% load static %}
 <!DOCTYPE html>
-
 <html lang="en">
-
 	<title>Login</title>
-
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 	<head>
-
 <link rel="icon" href="images/icon.png" type="image/x-icon" />
-
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-
-
-
 		<style>
 			body {background: url("{% static 'bg.jpg' %}");
 			}
@@ -46,7 +36,6 @@
 </strong></h2>
 			 <p class="text-center">
 				<span class="style4"><small id="passwordHelpInline" class="text-muted">Traffic prediction, graph convolutional neural network, deep learning, multi-stream, attention mechanism, data-driven adjacent matrix.
-
  </small></span> </p>
  			<hr>
 			<div class="row">
@@ -58,11 +47,8 @@
 					  </fieldset>
 					</form>
 				</div>
-
 				<div class="col-md-2">
-					<!-------null------>
 				</div>
-
 				<div class="col-md-5">
  				 		<form method="POST" role="form">
 							{% csrf_token %}
@@ -71,7 +57,6 @@
                              {% load static %}
 						<img src="{% static '/login.jpg' %}" alt="My image">
 							<p class="style5"> Login Using Your Account: </p>
-
 							<div class="form-group">
 								<input type="text" name="username"   placeholder="User Name" required>
 							</div>
@@ -81,11 +66,8 @@
 							<div>
 								<input type="submit" name="submit1"  class="btn btn-md" value="sign_in">
 							</div></br>
-
 							<p class="style5"> Login Using Your Account: </p>
-
 							<div>
-
 							<button class="btn btn-lg "><a href="{% url 'serviceproviderlogin' %}">SERVICE PROVIDER</a></button>
                                 <button class="btn btn-lg "><a href="{% url 'Register1' %}">REGISTER</a></button>
  							</div>
@@ -94,9 +76,6 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
 	</body>
-
-
 </html>
